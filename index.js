@@ -15,12 +15,12 @@ app.use(express.json());
 const openai = new OpenAIApi(configuration);
 
 
-app.get("/review-generate", async (req, res) => {
+app.post("/review-generate", async (req, res) => {
     try {
          const { url } = req.body;
 
         const prompt = [
-            `Generate a review of '${url}' this product and return it in a JSON format. The JSON will contain only the "ProductName", "ProductURL", "ProductPrice": website price, "ProductRating": website rating and it must be in number format, "ReviewBody", "SimilarItems": recommend 3 similar products, and your "Recommendation": do you recommend it or not? If there is no review or the rating is less than 3 then don't recommend.`, "The review should include a clear recommendation, either recommending or not recommending the product."
+            `Generate a review of '${url}' this product and return it in a JSON format. The JSON will contain only the "ProductName", "ProductURL", "ProductPrice": website price, "ProductRating": website rating and it must be in number format, "ReviewBody", "SimilarItems": recommend 3 similar products, and your "Recommendation": do you recommend it or highly recommended or not recommended? If there is no review or the rating is less than 3 then don't recommend.`, "The review should include a clear recommendation, either recommending or not recommending the product."
           ];
           
 
