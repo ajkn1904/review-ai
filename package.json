@@ -4,11 +4,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "dev": "node index.js",
     "build": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": " SIAM AL RAFI AND ANIKA RAHMAN NISHAT",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
@@ -16,5 +16,5 @@
     "express": "^4.18.2",
     "openai": "^3.3.0"
   },
-  "description": "Discover ReviewGPT.ai, the go-to website for AI-driven reviews! Powered by state-of-the-art GPT-3.5 technology, this platform delivers comprehensive and unbiased product evaluations. Get personalized insights and make informed choices effortlessly. Explore ReviewGPT.ai today and experience the future of reviews!"
+  "description": "Discover ReviewGPT, the go-to website for AI-driven reviews! Powered by state-of-the-art GPT-3.5 technology, this platform delivers comprehensive and unbiased product evaluations. Get personalized insights and make informed choices effortlessly. Explore ReviewGPT.ai today and experience the future of reviews!"
 }
