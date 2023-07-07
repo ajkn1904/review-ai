@@ -9,6 +9,8 @@ const configuration = new Configuration({
     apiKey: process.env.API_KEY,
 });
 
+
+// use necessary middleware
 app.use(cors());
 app.use(express.json());
 
@@ -51,11 +53,7 @@ app.post("/review-generate", async (req, res) => {
         console.error(error);
         res.status(500).json({ error: "An error occurred. Try again!" });
     }
-    finally {
-
-    }
 });
-
 
 
 
