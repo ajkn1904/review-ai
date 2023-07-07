@@ -14,7 +14,18 @@ app.use(express.json());
 
 const openai = new OpenAIApi(configuration);
 
-
+/**
+    * @api (POST) / get the review via product URL
+    * @apiDescription - this is the
+    * @apiPermission -All user.
+    * @apiHeader -{String} authorised user only.
+    * @apiParam - NO params.
+    *
+    * @apiSuccess {Object[]} all the review.
+    *
+    * @apiError (Unauthorized 401)  Unauthorized  Only authenticated users can access the route.
+    * @apiError (Forbidden 403)     Forbidden     Only authenticted users can access the route. 
+    */
 app.post("/review-generate", async (req, res) => {
     try {
          const { url } = req.body;
