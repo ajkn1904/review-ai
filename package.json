@@ -8,7 +8,7 @@
     "build": "node index.js"
   },
   "keywords": [],
-  "author": " SIAM AL RAFI AND ANIKA RAHMAN NISHAT",
+  "author": " SIAM AL RAFI AND ANIKA JUMANA KHANAM NISHAT",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
