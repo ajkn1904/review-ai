@@ -6,4 +6,6 @@ The CORS middleware (Cross-Origin Resource Sharing) is used to enable cross-orig
 
 The dotenv module is employed to load environment variables from a .env file into the server's runtime environment. This enables the secure storage of sensitive information such as API keys or configuration settings, ensuring they are not exposed in the source code.
 
-The OpenAI API integration is a crucial component of the Review GPT Server. It leverages the OpenAI GPT-3.5 language model to generate high-quality reviews or other types of textual content based on given prompts or queries. The server communicates with the OpenAI API to send requests and retrieve
+The OpenAI API integration is a crucial component of the Review GPT Server. It leverages the OpenAI GPT-3.5 language model to generate high-quality reviews or other types of textual content based on given prompts or queries. The server communicates with the OpenAI API to send requests and retrieve.
+
+# live Link: https://review-gpt-ai.onrender.com/
